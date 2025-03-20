@@ -3,7 +3,7 @@ def binary_search(list, target):
     last = len(list) - 1
     while first <= last:
         midpoint = (first + last) // 2
-        print(midpoint)
+        # print(midpoint)
         if list[midpoint] == target:
             print("Target found at index:", midpoint)
             break
@@ -20,6 +20,6 @@ def verify(index):
     else:
         print("Target not found in list")
 
-nums = [1, 22, 10, 4, 5, 6, 7, 8, 9, 100 ]
-binary_search(nums, 10)
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 100 ]
+binary_search(nums, 3)
 

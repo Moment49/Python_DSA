@@ -15,7 +15,6 @@ def quick_sort(values):
             less_than_pivot.append(value)
         else:
             greater_than_pivot.append(value)
-    # print(f"{less_than_pivot} {pivot} {greater_than_pivot}")
     return quick_sort(less_than_pivot) + [pivot] + quick_sort(greater_than_pivot)
             
 

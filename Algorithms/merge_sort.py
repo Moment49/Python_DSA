@@ -1,3 +1,7 @@
+import sys
+from load import load_numbers
+
+numbers = load_numbers(sys.argv[1])
 def merge_sort(list):
     """"Sorts a list in ascending order
     returns a new sorted list
@@ -60,10 +64,10 @@ def verify_sorted(list):
     
     return list[0] < list[1] and verify_sorted(list[1:])
 
-alist = [23,38, 88, 103, 12, 43, 77, 3, 8, 1, 4, 54, 84, 91]
+alist = [23,38, 88, 103, 12, 43, 77, 3, 8, 1, 4, 54, 84]
 
 # print(verify_sorted(alist))
-l = merge_sort(alist)
+l = merge_sort(numbers)
 # print(verify_sorted(l))
 print(l)
 # nlist = [20, 9, 8]
